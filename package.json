@@ -1,0 +1,5 @@
+{
+  "name": "coldstart",
+  "private": true,
+  "type": "module"
+}

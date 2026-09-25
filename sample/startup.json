@@ -1,0 +1,13 @@
+{
+  "cycle_code": "E_CYCLE",
+  "budget": 6,
+  "cancel_after": 3,
+  "done": ["p1"],
+  "parts": [
+    {"id": "p0", "size": 2, "deps": [], "priority": 1},
+    {"id": "p1", "size": 1, "deps": [], "priority": 2},
+    {"id": "p2", "size": 2, "deps": ["p0"], "priority": 3},
+    {"id": "p3", "size": 1, "deps": ["p1", "p2"], "priority": 1},
+    {"id": "p4", "size": 3, "deps": [], "priority": 5}
+  ]
+}
