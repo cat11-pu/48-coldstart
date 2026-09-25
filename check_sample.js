@@ -13,12 +13,12 @@ const list = order(spec.parts);
 const result = load(spec.parts, spec.budget, spec.cancel_after, spec.done || []);
 const view = render(spec);
 
-emit("加载顺序 =", JSON.stringify(list));
-emit("已加载分片 =", JSON.stringify(result.loaded));
+emit("加载顺序 =", list);
+emit("已加载分片 =", result.loaded);
 emit("中断位置 =", result.cancelled_at);
 emit("续传起点 =", result.resumed_from);
 emit("重复跳过的分片数 =", result.skipped);
-emit("因依赖未满足推迟的分片 =", JSON.stringify(result.deferred));
+emit("因依赖未满足推迟的分片 =", result.deferred);
 emit("预算消耗 =", view.budget_used);
 emit("依赖成环的错误码 =", spec.cycle_code);
 
